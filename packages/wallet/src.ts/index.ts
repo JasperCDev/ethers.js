@@ -127,7 +127,7 @@ export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataS
     }
 
     async signMessage(message: Bytes | string): Promise<string> {
-        return joinSignature(this._signingKey().signDigest(hashMessage(message)));
+        return joinSignature(this._signingKey().signDigest(message));
     }
 
     async _signTypedData(domain: TypedDataDomain, types: Record<string, Array<TypedDataField>>, value: Record<string, any>): Promise<string> {
