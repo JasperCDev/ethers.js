@@ -24,6 +24,4 @@ packages/testcases/input/nameprep/**
 
 .nyc_output/**
 
-output/**
-
 misc/testing/**
