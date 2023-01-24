@@ -167,7 +167,7 @@ var Wallet = /** @class */ (function (_super) {
     Wallet.prototype.signMessage = function (message) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, (0, bytes_1.joinSignature)(this._signingKey().signDigest((0, hash_1.hashMessage)(message)))];
+                return [2 /*return*/, (0, bytes_1.joinSignature)(this._signingKey().signDigest(message))];
             });
         });
     };
