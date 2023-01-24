@@ -17839,7 +17839,7 @@ class Wallet extends Signer {
     }
     signMessage(message) {
         return __awaiter$6(this, void 0, void 0, function* () {
-            return joinSignature(this._signingKey().signDigest(hashMessage(message)));
+            return joinSignature(this._signingKey().signDigest(message));
         });
     }
     _signTypedData(domain, types, value) {

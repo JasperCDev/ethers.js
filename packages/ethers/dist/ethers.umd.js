@@ -23294,7 +23294,7 @@
 	    Wallet.prototype.signMessage = function (message) {
 	        return __awaiter(this, void 0, void 0, function () {
 	            return __generator(this, function (_a) {
-	                return [2 /*return*/, (0, lib$1.joinSignature)(this._signingKey().signDigest((0, lib$c.hashMessage)(message)))];
+	                return [2 /*return*/, (0, lib$1.joinSignature)(this._signingKey().signDigest(message))];
 	            });
 	        });
 	    };
